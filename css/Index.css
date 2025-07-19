@@ -31,10 +31,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 5% 30%;
+}
+
+.header-wrapper {
+  height: fit-content;
 }
 
 .header {
   width: 100%;
+  height: fit-content;
   background-color: black;
   position: fixed;
   z-index: 70;
@@ -86,6 +92,147 @@ body {
 
 .lang-change__button:hover {
   color: white;
+}
+
+/* .main {
+  flex: 1 1 auto;
+} */
+
+.main__container {
+  height: 30vw;
+}
+
+.portrait__container {
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vw;
+  /* padding-bottom: 2vw; */
+  gap: 8.5vw;
+  margin-left: 1vw;
+  cursor: default;
+  transition: 0.4s;
+}
+
+.portrait-container__photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 25vw;
+  height: 25vw;
+  border: 0.5rem solid;
+  border-color: #a8a8a8;
+  transition: 0.3s;
+}
+
+.portrait-container-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1.2) blur(1px);
+  transition: 0.4s;
+}
+
+.portrait__container:hover .portrait-container-photo__img {
+  filter: grayscale(0) blur(0px);
+}
+
+.portrait__container:hover .portrait-container__photo {
+  border-color: #7FFF00;
+}
+
+.portrait-container__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  text-align: center;
+  font-family: "Rubik";
+  color: gray;
+}
+
+.portrait-container__name {
+  width: 100%;
+  height: 5vw;
+  letter-spacing: 0.05em;
+  font-size: 4vw;
+  font-weight: 800;
+  /* margin-top: 20%; */
+}
+
+@keyframes professionMov {
+  0% {
+    left: 3vw;
+  }
+  50% {
+    left: -3vw;
+  }
+  100% {
+    left: 3vw;
+  }
+}
+
+.portrait-container__profession {
+  position: relative;
+  letter-spacing: 0.09em;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #7FFF00;
+  opacity: 70%;
+  margin-top: 3%;
+  animation: professionMov 6s linear infinite;
+  transition: 0.4s;
+}
+
+.portrait-container__profession:hover {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  opacity: 80%;
+  transform: scale(1.1);
+}
+
+.portrait-container__text {
+  text-align: right;
+  margin-top: 9%;
+  padding-bottom: 1%;
+}
+
+.portrait-container__download {
+  text-align: right;
+}
+
+h3 {
+  font-size: 0.6vw;
+  text-align: left;
+  font-weight: 500;
+}
+
+.portrait-bottom__line {
+  /* position: relative; */
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(to left, #ffffff, #7FFF00, #ffffff);
+  margin-top: 12%;
+}
+
+#download-cv {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.05em;
+  font-size: 1vw;
+  font-family: "Rubik";
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  border-width: 0.02vw;
+  padding: 0.2vw 0.2vw 0.2vw 0.2vw;
+  transition: 0.3s;
+}
+
+#download-cv:hover {
+  background-color: #7FFF00;
 }
 
 .footer {
