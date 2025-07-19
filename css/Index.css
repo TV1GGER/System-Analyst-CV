@@ -30,6 +30,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -85,4 +86,34 @@ body {
 
 .lang-change__button:hover {
   color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 2.5vw;
+  color: #7FFF00;
+  font-family: "Rubik";
+  letter-spacing: 0.05vw;
+  font-size: 1.1vw;
+  font-weight: 550;
+  margin: 0 auto;
+}
+
+.footer__container a {
+  text-decoration: none;
+  color: #7FFF00;
+  transition: 0.3s;
+}
+
+.footer__container a:hover {
+  color: #ffffff;
 }
