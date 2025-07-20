@@ -113,7 +113,7 @@ body {
   margin-left: 1vw;
   cursor: default;
   transition: 0.4s;
-}
+} 
 
 .portrait {
   display: flex;
